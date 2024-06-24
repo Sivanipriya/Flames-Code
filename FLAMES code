@@ -87,15 +87,15 @@ char cu;
 	h++;
 }
 	if( cu=='F')
-	printf("\nFriend ah poche da");
+	printf("\nFriend ah poche ");
 	else if(cu=='L')
-	printf("\nCongrats mappu..love");
+	printf("\nCongrats.. love");
 	else if(cu=='A')
-	printf("\nAffection aamango....");
+	printf("\nAffection aahaa....");
 	else if(cu=='M')
 	printf("\n Kalyana sappadu dha");
 	else if(cu=='E')
-	printf("\nVendam da vitru...");
+	printf("\nEnemy ...");
 	else
-	printf("\nThangachi nalaru ma...");
+	printf("\nSister nalaru ma...");
 }
