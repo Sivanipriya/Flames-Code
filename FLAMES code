@@ -1,0 +1,101 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char str1[100],str2[100],str3[100];
+	printf("Enter name1:");
+	scanf("%s",str1);
+	printf("\nEnter name2:");
+	scanf("%s",str2);
+	int len1=0,len2=0,ka=0;
+	while(str1[ka]!='\0')
+	{
+		len1++;
+		ka++;
+	}
+	ka=0;
+	while(str2[ka]!='\0')
+	{
+		len2++;
+		ka++;
+	}
+	for(int i=0;i<len1;i++)
+	{
+		for(int j=0;j<len2;j++)
+		{
+			if(str1[i]==str2[j] &&str1[i]!='\0'&& str2[j]!='\0')
+			{
+				str1[i]='\0';
+				str2[j]='\0';
+			}
+		}
+	}
+	int o=0;
+		for(int i=0;i<len1;i++)
+	{
+		if(str1[i]!='\0')
+		{
+		str3[o]=str1[i];
+		o++;
+		}
+	}
+printf("\n");
+for(int i=0;i<len2;i++)
+{
+	if(str2[i]!='\0')
+	{
+	str3[o]=str2[i];
+	o++;
+}
+}
+int l=o;
+char fl[6]={'F','L','A','M','E','S'};
+	int count=0,j=0,k=0;
+	while(count!=5)
+	{
+		k=0;
+		while(k!=l)
+		{
+			if(j>=6)
+			{
+			j=0;
+		}
+			while(j<6 && k!=l)
+			{
+				if(fl[j]!='\0') 
+				{
+				k++;
+			}
+			j++;
+			
+			}
+		}
+			
+		fl[j-1]='\0';
+		count++;
+	}
+int h=0;
+char cu;
+	while(h<o)
+	{
+	
+		if(fl[h]!='\0')
+		{
+		cu=fl[h];
+		break;
+	}
+	h++;
+}
+	if( cu=='F')
+	printf("\nFriend ah poche da");
+	else if(cu=='L')
+	printf("\nCongrats mappu..love");
+	else if(cu=='A')
+	printf("\nAffection aamango....");
+	else if(cu=='M')
+	printf("\n Kalyana sappadu dha");
+	else if(cu=='E')
+	printf("\nVendam da vitru...");
+	else
+	printf("\nThangachi nalaru ma...");
+}
