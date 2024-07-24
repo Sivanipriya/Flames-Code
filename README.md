@@ -1,1 +1,1 @@
-Put FLAMES without paper with your favourite names..
+Put FLAMES without paper with your favourite names.
